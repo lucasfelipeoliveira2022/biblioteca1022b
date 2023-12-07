@@ -1,0 +1,39 @@
+///CADSTRA 
+POST http://localhost:3333/livro
+Content-Type: application/json
+
+{
+    "titulo": "Livro 02",
+    "autor": "Autor 02",
+    "npaginas": 450
+}
+
+###
+
+
+//APARECE O CADASTRO
+GET http://localhost:3333/livro
+
+###
+
+//pesquisa
+GET http://localhost:3333/livro?search=IFMS
+
+###
+
+//ATUALIZAR
+PUT http://localhost:3333/livro/439aed90-1311-43de-b9c4-92832eb3aca1
+Content-Type: application/json
+
+{
+    "titulo": "Livro: IFMS",
+    "autor": "Autor: Lucas Felipe",
+    "npaginas": 100
+}
+
+###
+
+//DELETE
+DELETE http://localhost:3333/livro/97bfa7e7-943c-4817-a740-1c4ddf27e135
+
+
